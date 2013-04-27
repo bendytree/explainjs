@@ -1,1 +1,4 @@
 .DS_Store
+samples/
+test/
+node_modules/

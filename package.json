@@ -1,26 +1,30 @@
 {
-    "name" : "explainjs",
-    "version" : "0.0.1",
-    "description" : "Creates a side-by-side view of source JavaScript with the authors explanation.",
-    "main" : "./index.js",
-    "repository" : {
-        "type" : "git",
-        "url" : "http://github.com/bendytree/explainjs.git"
-    },
-    "keywords" : [
-        "explain",
-        "javascript",
-        "documentation",
-        "side"
-    ],
-    "devDependencies" : {
-    },
-    "author" : {
-        "name" : "Josh Wright",
-        "email" : "josh@bendytree.com",
-        "url" : "http://bendytree.com"
-    },
-    "scripts" : {
-    },
-    "license" : "MIT/X11"
+  "name": "explainjs",
+  "version": "0.0.1",
+  "description": "Creates a side-by-side view of source JavaScript with the authors explanation.",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bendytree/explainjs.git"
+  },
+  "keywords": [
+    "explain",
+    "javascript",
+    "documentation",
+    "side"
+  ],
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "should": "~1.2.2"
+  },
+  "author": {
+    "name": "Josh Wright",
+    "email": "josh@bendytree.com",
+    "url": "http://bendytree.com"
+  },
+  "scripts": {},
+  "license": "MIT/X11",
+  "dependencies": {
+    "node-markdown": "~0.1.1"
+  }
 }
