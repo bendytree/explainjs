@@ -73,7 +73,15 @@ module.exports = function(js, callback){
         var section = sections[i];
         
         var comments = section.comments.join(i===0?'\n\n':'\n');
-        section.comments = markdown(comments).replace(/[\n]+/gm,' ');
+        try{
+            section.comments = markdown(comments).replace(/[\n]+/gm,' ');
+        }catch(ex){ 
+            section.comments = comments;
+            // console.log('markdown conversion error');
+            // console.log(typeof comments);
+            // console.log('>>>>>>', comments, '<<<<<<');
+            // console.log(ex);
+        }
         section.code = section.code.join('\n');
     }
     

@@ -150,3 +150,9 @@ var explainjs = require('../index.js');
             done();
         });
     });
+    
+    it('pukes because of markdown', function(){
+        var txt = '[push]';
+        var markdown = require('node-markdown').Markdown;
+        //var html = markdown(txt);
+    });
