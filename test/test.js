@@ -129,7 +129,7 @@ var explainjs = require('../index.js');
         var js = "//a\n\n/* X\n * ====== */";
         explainjs(js, function(err, results){
             results.sections.length.should.equal(2);
-            results.sections[1].comments.should.equal('<h1>X</h1>');
+            results.sections[1].comments.should.equal('<h1> X</h1>');
             done();
         });
     });
@@ -147,6 +147,22 @@ var explainjs = require('../index.js');
         var js = "//hi\n\ta();";
         explainjs(js, function(err, results){
             results.sections[0].code.should.equal('  a();');
+            done();
+        });
+    });
+    
+    it('retains spaces AFTER a comments whacks', function(done){
+        var js = "//    hi\na();";
+        explainjs(js, function(err, results){
+            results.sections[0].comments.should.equal('<pre><code>hi </code></pre>');
+            done();
+        });
+    });
+    
+    it('retains spaces AFTER a stars comments', function(done){
+        var js = "//x\n\n/*\n *    hi\n */";
+        explainjs(js, function(err, results){
+            results.sections[1].comments.should.equal('<pre><code>hi </code></pre>');
             done();
         });
     });

@@ -23,10 +23,11 @@ module.exports = function(js, callback){
                 
     // Convert asterisk style comments to whack-whack style.
     js = js.replace(/\/\*!?((?:[^*]|\*+[^*/])*)\*+\//g, function(match, comment){
-        comment = comment.replace(/^[ *\r\n]+/g, '')
-                         .replace(/^[ *]+/m, '')
+        comment = comment.replace(/^ *[\r\n]+/g, '')
+                         .replace(/^ *[*]+/gm, '')
                          .replace(/[ *]+$/mg, '')
-                         .replace(/^/mg, '// ');
+                         .replace(/^ +(?=[=])/igm, '')
+                         .replace(/^/mg, '//');
         return comment;
     });
     
@@ -43,7 +44,7 @@ module.exports = function(js, callback){
                 
         var line = lines[i],
             blank = /^[ \r\n]*$/.test(line),
-            comment = (line.match(/^ *\/\/ *(.*)/)||[])[1];
+            comment = (line.match(/^ *\/\/(.*)/)||[])[1];
         
         if (blank) {
             if (lastWasComment === false) {
