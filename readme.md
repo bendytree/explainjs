@@ -10,12 +10,12 @@ More info at http://www.explainjs.com
 
 	var js = '//My Library\n doSomething();';
 
-	explainjs(js, function(error, sections){
-	  // &lt;p&gt;My Library&lt;/p&gt;
-	  console.log(sections[0].comments);
+	explainjs(js, function(error, results){
+	  // <p>My Library</p>
+	  console.log(results.sections[0].comments);
 	
 	  // doSomething();
-	  console.log(sections[0].code);
+	  console.log(results.sections[0].code);
 	});
 
 Here's how it looks:
