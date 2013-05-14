@@ -180,3 +180,11 @@ var explainjs = require('../index.js');
             done();
         });
     });
+    
+    it('forces JSDoc style @properties to newline', function(done){
+        var js = "//x\n1;\n//a\n//  @b";
+        explainjs(js, function(err, results){
+            results.sections[1].comments.should.equal('<p>a</p> <p>@b</p>');
+            done();
+        });
+    });

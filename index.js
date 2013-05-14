@@ -84,13 +84,11 @@ module.exports = function(js, callback){
         
         var comments = section.comments.join(i===0?'\n\n':'\n');
         try{
-            section.comments = markdown(escapeHtml(comments)).replace(/[\n]+/gm,' ');
+            var md = escapeHtml(comments)
+                       .replace(/^( *[@])/mg, '\n$1');
+            section.comments = markdown(md).replace(/[\n]+/gm,' ');
         }catch(ex){ 
             section.comments = comments;
-            // console.log('markdown conversion error');
-            // console.log(typeof comments);
-            // console.log('>>>>>>', comments, '<<<<<<');
-            // console.log(ex);
         }
         section.code = section.code.join('\n');
     }
