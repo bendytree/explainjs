@@ -1,6 +1,6 @@
 {
   "name": "explainjs",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Creates a side-by-side view of source JavaScript with the authors explanation.",
   "main": "./index.js",
   "repository": {
