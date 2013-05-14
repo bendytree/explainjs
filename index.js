@@ -68,6 +68,15 @@ module.exports = function(js, callback){
             lastWasComment = true;
         }
     }
+    
+    var escapeHtml = function(html){
+          return String(html)
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');  
+    };
         
     //convert comments to markdown
     for (var i=0; i<sections.length; i++){
@@ -75,7 +84,7 @@ module.exports = function(js, callback){
         
         var comments = section.comments.join(i===0?'\n\n':'\n');
         try{
-            section.comments = markdown(comments).replace(/[\n]+/gm,' ');
+            section.comments = markdown(escapeHtml(comments)).replace(/[\n]+/gm,' ');
         }catch(ex){ 
             section.comments = comments;
             // console.log('markdown conversion error');

@@ -172,3 +172,11 @@ var explainjs = require('../index.js');
         var markdown = require('node-markdown').Markdown;
         //var html = markdown(txt);
     });
+    
+    it('handles HTML in comments', function(done){
+        var js = "// <table> \n1;";
+        explainjs(js, function(err, results){
+            results.sections[0].comments.should.equal('<p>&lt;table&gt; </p>');
+            done();
+        });
+    });
