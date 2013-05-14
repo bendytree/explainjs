@@ -1,0 +1,138 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose publish [ './' ]
+5 verbose read json /Users/joshinnorman/Projects/explainjs/npm/package.json
+6 verbose cache add [ './', null ]
+7 verbose cache add name=undefined spec="./" args=["./",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: './',
+8 verbose parsed url   path: './',
+8 verbose parsed url   href: './' }
+9 silly lockFile 0ee6c175- ./
+10 verbose lock ./ /Users/joshinnorman/.npm/0ee6c175-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz',
+12 verbose tar pack   './' ]
+13 verbose tarball /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz
+14 verbose folder ./
+15 info prepublish explainjs@0.0.8
+16 silly lockFile 0ee6c175- ./
+17 verbose lock ./ /Users/joshinnorman/.npm/0ee6c175-.lock
+18 silly lockFile 6e810316-26845-0-5452613984234631-tmp-tgz /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz
+19 verbose lock /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz /Users/joshinnorman/.npm/6e810316-26845-0-5452613984234631-tmp-tgz.lock
+20 silly lockFile 0ee6c175- ./
+21 silly lockFile 0ee6c175- ./
+22 silly lockFile 6e810316-26845-0-5452613984234631-tmp-tgz /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz
+23 silly lockFile 6e810316-26845-0-5452613984234631-tmp-tgz /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz
+24 verbose tar unpack /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz
+25 silly lockFile f100d7bf-26845-0-5452613984234631-package /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package
+26 verbose lock /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package /Users/joshinnorman/.npm/f100d7bf-26845-0-5452613984234631-package.lock
+27 silly lockFile 6e810316-26845-0-5452613984234631-tmp-tgz /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz
+28 verbose lock /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz /Users/joshinnorman/.npm/6e810316-26845-0-5452613984234631-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry package.json
+31 silly gunzTarPerm extractEntry .npmignore
+32 silly gunzTarPerm extractEntry index.js
+33 silly gunzTarPerm extractEntry readme.md
+34 verbose read json /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package/package.json
+35 silly lockFile f100d7bf-26845-0-5452613984234631-package /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package
+36 silly lockFile f100d7bf-26845-0-5452613984234631-package /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package
+37 silly lockFile 6e810316-26845-0-5452613984234631-tmp-tgz /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz
+38 silly lockFile 6e810316-26845-0-5452613984234631-tmp-tgz /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/tmp.tgz
+39 verbose from cache /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package/package.json
+40 verbose tar pack [ '/Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz',
+40 verbose tar pack   '/var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package' ]
+41 verbose tarball /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz
+42 verbose folder /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package
+43 silly lockFile f100d7bf-26845-0-5452613984234631-package /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package
+44 verbose lock /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package /Users/joshinnorman/.npm/f100d7bf-26845-0-5452613984234631-package.lock
+45 silly lockFile 4242aba5--npm-explainjs-0-0-8-package-tgz /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz
+46 verbose lock /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz /Users/joshinnorman/.npm/4242aba5--npm-explainjs-0-0-8-package-tgz.lock
+47 silly lockFile f100d7bf-26845-0-5452613984234631-package /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package
+48 silly lockFile f100d7bf-26845-0-5452613984234631-package /var/folders/bw/22lx8m713jv92dzcl3pt2_s80000gn/T/npm-16849/1368558526845-0.5452613984234631/package
+49 silly lockFile 4242aba5--npm-explainjs-0-0-8-package-tgz /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz
+50 silly lockFile 4242aba5--npm-explainjs-0-0-8-package-tgz /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz
+51 silly lockFile 465fa463-rman-npm-explainjs-0-0-8-package /Users/joshinnorman/.npm/explainjs/0.0.8/package
+52 verbose lock /Users/joshinnorman/.npm/explainjs/0.0.8/package /Users/joshinnorman/.npm/465fa463-rman-npm-explainjs-0-0-8-package.lock
+53 silly lockFile 465fa463-rman-npm-explainjs-0-0-8-package /Users/joshinnorman/.npm/explainjs/0.0.8/package
+54 silly lockFile 465fa463-rman-npm-explainjs-0-0-8-package /Users/joshinnorman/.npm/explainjs/0.0.8/package
+55 verbose tar unpack /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz
+56 silly lockFile 465fa463-rman-npm-explainjs-0-0-8-package /Users/joshinnorman/.npm/explainjs/0.0.8/package
+57 verbose lock /Users/joshinnorman/.npm/explainjs/0.0.8/package /Users/joshinnorman/.npm/465fa463-rman-npm-explainjs-0-0-8-package.lock
+58 silly lockFile 4242aba5--npm-explainjs-0-0-8-package-tgz /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz
+59 verbose lock /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz /Users/joshinnorman/.npm/4242aba5--npm-explainjs-0-0-8-package-tgz.lock
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm extractEntry index.js
+64 silly gunzTarPerm extractEntry readme.md
+65 verbose read json /Users/joshinnorman/.npm/explainjs/0.0.8/package/package.json
+66 silly lockFile 465fa463-rman-npm-explainjs-0-0-8-package /Users/joshinnorman/.npm/explainjs/0.0.8/package
+67 silly lockFile 465fa463-rman-npm-explainjs-0-0-8-package /Users/joshinnorman/.npm/explainjs/0.0.8/package
+68 silly lockFile 4242aba5--npm-explainjs-0-0-8-package-tgz /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz
+69 silly lockFile 4242aba5--npm-explainjs-0-0-8-package-tgz /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz
+70 silly shasum updated bytes 1779
+71 info shasum cf4b308478b2b7626e492f8316565020aa5355a3
+71 info shasum /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz
+72 verbose from cache /Users/joshinnorman/.npm/explainjs/0.0.8/package/package.json
+73 verbose chmod /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz 644
+74 verbose chown /Users/joshinnorman/.npm/explainjs/0.0.8/package.tgz [ 501, 20 ]
+75 silly lockFile 0ee6c175- ./
+76 silly publish { name: 'explainjs',
+76 silly publish   version: '0.0.8',
+76 silly publish   description: 'Creates a side-by-side view of source JavaScript with the authors explanation.',
+76 silly publish   main: './index.js',
+76 silly publish   repository:
+76 silly publish    { type: 'git',
+76 silly publish      url: 'http://github.com/bendytree/explainjs.git' },
+76 silly publish   keywords: [ 'explain', 'javascript', 'documentation', 'side' ],
+76 silly publish   devDependencies: { mocha: '~1.9.0', should: '~1.2.2' },
+76 silly publish   author:
+76 silly publish    { name: 'Josh Wright',
+76 silly publish      email: 'josh@bendytree.com',
+76 silly publish      url: 'http://bendytree.com' },
+76 silly publish   scripts: {},
+76 silly publish   license: 'MIT/X11',
+76 silly publish   dependencies: { 'node-markdown': '~0.1.1' },
+76 silly publish   readme: '\n# ExplainJS\n\nGenerate a side-by-side view of your comments and code. Works on JavaScript files, CSS, and other similar languages.\n\nMore info at http://www.explainjs.com\n\n\n\tvar explainjs = require(\'explainjs\');\n\n\tvar js = \'//My Library\\n doSomething();\';\n\n\texplainjs(js, function(error, results){\n\t  // <p>My Library</p>\n\t  console.log(results.sections[0].comments);\n\t\n\t  // doSomething();\n\t  console.log(results.sections[0].code);\n\t});\n\nHere\'s how it looks:\n\n![ExplainJS Screenshot](http://www.explainjs.com/static/images/screenshot.jpg)\n',
+76 silly publish   readmeFilename: 'readme.md',
+76 silly publish   _id: 'explainjs@0.0.8',
+76 silly publish   dist: { shasum: 'cf4b308478b2b7626e492f8316565020aa5355a3' },
+76 silly publish   _from: './' }
+77 verbose url raw explainjs
+78 verbose url resolving [ 'https://registry.npmjs.org/', './explainjs' ]
+79 verbose url resolved https://registry.npmjs.org/explainjs
+80 info trying registry request attempt 1 at 14:08:58
+81 http PUT https://registry.npmjs.org/explainjs
+82 http 409 https://registry.npmjs.org/explainjs
+83 verbose url raw explainjs
+84 verbose url resolving [ 'https://registry.npmjs.org/', './explainjs' ]
+85 verbose url resolved https://registry.npmjs.org/explainjs
+86 info trying registry request attempt 1 at 14:09:01
+87 http GET https://registry.npmjs.org/explainjs
+88 http 200 https://registry.npmjs.org/explainjs
+89 error publish fail Cannot publish over existing version.
+89 error publish fail Update the 'version' field in package.json and try again.
+89 error publish fail
+89 error publish fail If the previous version was published in error, see:
+89 error publish fail     npm help unpublish
+89 error publish fail
+89 error publish fail To automatically increment version numbers, see:
+89 error publish fail     npm help version
+90 error System Darwin 11.4.2
+91 error command "node" "/usr/local/bin/npm" "publish" "./"
+92 error cwd /Users/joshinnorman/Projects/explainjs/npm
+93 error node -v v0.10.0
+94 error npm -v 1.2.14
+95 error code EPUBLISHCONFLICT
+96 verbose exit [ 1, true ]
