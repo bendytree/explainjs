@@ -21,3 +21,9 @@ More info at http://www.explainjs.com
 Here's how it looks:
 
 ![ExplainJS Screenshot](http://www.explainjs.com/static/images/screenshot.jpg)
+
+
+
+## Grunt
+
+If you're looking for a [Grunt plugin](http://gruntjs.com) to automate this on your project, checkout [grunt-explainjs](https://github.com/collinforrester/grunt-explainjs).
