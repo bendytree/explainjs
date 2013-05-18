@@ -84,9 +84,20 @@ module.exports = function(js, callback){
         
         var comments = section.comments.join(i===0?'\n\n':'\n');
         try{
-            var md = escapeHtml(comments)
+            var md = comments
                        .replace(/^( *[@])/mg, '\n$1');
-            section.comments = markdown(md).replace(/[\n]+/gm,' ');
+            section.comments = markdown(
+                                  md,
+                                  false,
+                                  'a|b|blockquote|code|del|dd|dl|dt|em|h1|h2|h3|i|img|li|ol|p|pre|sup|sub|strong|strike|ul|br|hr|img',
+                                  {
+                                    iframe: 'src|width|height|allowfullscreen|frameborder',
+                                    img: 'src|width|height|alt',
+                                    a:'href',
+                                    '*': 'title'
+                                  },
+                                  true
+                                ).replace(/[\n]+/gm,' ');
         }catch(ex){ 
             section.comments = comments;
         }
