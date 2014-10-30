@@ -27,3 +27,10 @@ Here's how it looks:
 ## Grunt
 
 If you're looking for a [Grunt plugin](http://gruntjs.com) to automate this on your project, checkout [grunt-explainjs](https://github.com/collinforrester/grunt-explainjs).
+
+
+
+
+## License
+
+[MIT License](https://github.com/bendytree/explainjs/blob/master/LICENSE.txt)
